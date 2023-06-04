@@ -5,8 +5,8 @@ import { NavItemProps } from "./NavItem";
 export type NavbarProps = {
   className?: string;
   children?:
-    | React.ReactElement<NavItemProps>
-    | React.ReactElement<NavItemProps>[];
+  | React.ReactElement<NavItemProps>
+  | React.ReactElement<NavItemProps>[];
 };
 
 export function CollapsibleNavbar({ children, className = "" }: NavbarProps) {
