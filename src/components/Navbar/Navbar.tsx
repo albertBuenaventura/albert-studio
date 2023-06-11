@@ -9,8 +9,8 @@ export type NavbarProps = {
   className?: string;
   logoClassName?: string;
   children?:
-  | React.ReactElement<NavItemProps>
-  | React.ReactElement<NavItemProps>[];
+    | React.ReactElement<NavItemProps>
+    | React.ReactElement<NavItemProps>[];
 };
 
 export function Navbar({ children, className = "" }: NavbarProps) {
@@ -35,9 +35,9 @@ export function Navbar({ children, className = "" }: NavbarProps) {
         )}
       >
         <div className="flex mr-8">
-          <div className="hidden lg:flex space-x-9">{children}</div>
+          <div className="hidden sm:flex space-x-9">{children}</div>
           <FontAwesomeIcon
-            className="lg:hidden h-11 mr-8 self-center text-sky-700 hover:text-sky-700/70 cursor-pointer"
+            className="sm:hidden h-11 self-center text-white cursor-pointer"
             icon={!showSidebar ? faBars : faXmark}
             onClick={() => setShowSidebar(!showSidebar)}
           />
