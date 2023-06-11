@@ -42,7 +42,7 @@ export function Navbar({ children, className = "" }: NavbarProps) {
             onClick={() => setShowSidebar(!showSidebar)}
           />
         </div>
-        <div className="absolute bottom-0 w-full h-1.5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
+        <div className="absolute bottom-0 w-full h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
       </div>
       {showSidebar && <CollapsibleNavbar>{children}</CollapsibleNavbar>}
     </div>
