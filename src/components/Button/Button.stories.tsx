@@ -10,8 +10,15 @@ const defaultArgs: ButtonProps = {
 
 const Template: Story<ButtonProps> = (props: ButtonProps) => {
   return (
-    <div className="dark">
-      <Button {...props} />
+    <div className="flex flex-col gap-y-7">
+      <div className="dark">
+        <div>Dark</div>
+        <Button {...props} />
+      </div>
+      <div>
+        <div>Light</div>
+        <Button {...props} />
+      </div>
     </div>
   );
 };
