@@ -19,7 +19,7 @@ const variantClass = {
   [ButtonVariant.Primary]:
     "text-white bg-maroon hover:bg-maroon/75 dark:bg-slate-800 dark:hover:bg-slate-800/75",
   [ButtonVariant.Secondary]:
-    "bg-white text-black border border-solid border-maroon hover:text-white hover:bg-maroon dark:hover:bg-slate-800",
+    "bg-transparent text-maroon border border-solid border-maroon hover:text-white hover:bg-maroon dark:bg-slate-800 dark:text-white dark:border-slate-800 dark:hover:bg-slate-800/75",
 };
 
 export function Button({
