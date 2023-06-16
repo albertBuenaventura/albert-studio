@@ -30,19 +30,20 @@ export function Navbar({ children, className = "" }: NavbarProps) {
     <div className="sticky z-[9999] top-0" ref={ref}>
       <div
         className={cx(
-          "w-full flex bg-slate-900 h-[70px] drop-shadow-lg justify-end",
+          "w-full flex bg-white dark:bg-slate-900 h-[70px] justify-end",
           className
         )}
       >
         <div className="flex mr-8">
-          <div className="hidden sm:flex space-x-9">{children}</div>
+          <div className="hidden sm:flex space-x-9 items-center">
+            {children}
+          </div>
           <FontAwesomeIcon
             className="sm:hidden h-11 self-center text-white cursor-pointer"
             icon={!showSidebar ? faBars : faXmark}
             onClick={() => setShowSidebar(!showSidebar)}
           />
         </div>
-        <div className="absolute bottom-0 w-full h-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500" />
       </div>
       {showSidebar && <CollapsibleNavbar>{children}</CollapsibleNavbar>}
     </div>

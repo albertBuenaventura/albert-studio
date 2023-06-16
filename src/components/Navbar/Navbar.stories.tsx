@@ -3,6 +3,7 @@ import { Story, Meta } from "@storybook/react";
 
 import { Navbar, NavItem, NavbarProps } from ".";
 import StorybookThemeContainer from "../StorybookThemeContainer";
+import { Button, ButtonVariant } from "../Button";
 
 const defaultArgs: NavbarProps = {};
 
@@ -13,6 +14,7 @@ const Template: Story<NavbarProps> = (props: NavbarProps) => {
         <NavItem url="#" text="About me" />
         <NavItem url="#" text="Projects" />
         <NavItem url="#" text="Contact" />
+        <Button variant={ButtonVariant.Secondary}>Know more</Button>
       </Navbar>
     </StorybookThemeContainer>
   );

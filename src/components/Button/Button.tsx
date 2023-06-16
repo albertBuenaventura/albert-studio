@@ -13,13 +13,13 @@ export type ButtonProps = {
   className?: string;
 } & React.HTMLAttributes<HTMLButtonElement>;
 
-const baseClass = "rounded-full py-2 px-4";
+const baseClass = "rounded-full h-11 py-2 px-4";
 
 const variantClass = {
   [ButtonVariant.Primary]:
     "text-white bg-maroon hover:bg-maroon/75 dark:bg-slate-800 dark:hover:bg-slate-800/75",
   [ButtonVariant.Secondary]:
-    "bg-transparent text-maroon border border-solid border-maroon hover:text-white hover:bg-maroon dark:bg-slate-800 dark:text-white dark:border-slate-800 dark:hover:bg-slate-800/75",
+    "bg-transparent text-maroon border border-solid border-maroon hover:text-white hover:bg-maroon dark:bg-slate-800 dark:text-slate-500 dark:border-slate-800 dark:hover:text-white dark:hover:bg-slate-800/50",
 };
 
 export function Button({
