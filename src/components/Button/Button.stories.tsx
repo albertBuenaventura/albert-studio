@@ -2,6 +2,7 @@ import React from "react";
 import { Story, Meta } from "@storybook/react";
 
 import { Button, ButtonProps, ButtonVariant } from ".";
+import StorybookThemeContainer from "../StorybookThemeContainer";
 
 const defaultArgs: ButtonProps = {
   children: "Click me",
@@ -10,16 +11,9 @@ const defaultArgs: ButtonProps = {
 
 const Template: Story<ButtonProps> = (props: ButtonProps) => {
   return (
-    <div className="flex flex-col gap-y-7">
-      <div className="dark">
-        <div>Dark</div>
-        <Button {...props} />
-      </div>
-      <div>
-        <div>Light</div>
-        <Button {...props} />
-      </div>
-    </div>
+    <StorybookThemeContainer>
+      <Button {...props} />
+    </StorybookThemeContainer>
   );
 };
 
