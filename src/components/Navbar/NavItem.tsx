@@ -10,7 +10,7 @@ export type NavItemProps = {
 export function NavItem({ text, url, className = "" }: NavItemProps) {
   return (
     <Link
-      className={`h-full flex items-center text-xl font-bold text-slate-500 hover:text-slate-900 dark:hover:text-white ${className}`}
+      className={`h-full flex items-center text-xl font-bold text-slate-500 hover:text-maroon dark:hover:text-white ${className}`}
       href={url ?? "#"}
     >
       {text}
