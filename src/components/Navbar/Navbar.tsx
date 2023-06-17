@@ -39,7 +39,7 @@ export function Navbar({ children, className = "" }: NavbarProps) {
             {children}
           </div>
           <FontAwesomeIcon
-            className="sm:hidden h-11 self-center text-white cursor-pointer"
+            className="sm:hidden h-11 self-center text-maroon dark:text-white cursor-pointer"
             icon={!showSidebar ? faBars : faXmark}
             onClick={() => setShowSidebar(!showSidebar)}
           />
