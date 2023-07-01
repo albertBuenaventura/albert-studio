@@ -9,12 +9,12 @@ export default function StorybookThemeContainer({
 }: StorybookThemeContainerProps) {
   return (
     <div className="flex flex-col gap-y-7">
-      <div className="dark">
-        <div>Dark</div>
-        {children}
-      </div>
       <div>
         <div>Light</div>
+        {children}
+      </div>
+      <div className="dark">
+        <div>Dark</div>
         {children}
       </div>
     </div>

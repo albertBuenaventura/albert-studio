@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { NavItemProps } from "./NavItem";
 import { CollapsibleNavbar } from "./CollapsibleNavbar";
+import { useDetectOutsideClick } from "../../hooks/use-detect-outside-click-hook";
 
 export type NavbarProps = {
   className?: string;
@@ -25,6 +26,16 @@ export function Navbar({ children, className = "" }: NavbarProps) {
 
     return () => window.removeEventListener("resize", hideSidebar);
   }, []);
+
+  useDetectOutsideClick(
+    {
+      containerRef: ref,
+      onDetect: () => {
+        hideSidebar();
+      },
+    },
+    [ref]
+  );
 
   return (
     <div className="sticky z-[9999] top-0" ref={ref}>
