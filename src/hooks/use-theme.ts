@@ -4,7 +4,7 @@ import createPersistedState from "use-persisted-state";
 const useThemeState = createPersistedState<Theme>("studio-theme");
 
 export const useTheme = () => {
-  const [theme, setTheme] = useThemeState(Theme.Light);
+  const [theme, setTheme] = useThemeState();
 
   return {
     theme,
