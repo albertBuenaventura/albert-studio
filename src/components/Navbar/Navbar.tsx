@@ -41,11 +41,11 @@ export function Navbar({ children, className = "" }: NavbarProps) {
     <div className="sticky z-[9999] top-0" ref={ref}>
       <div
         className={cx(
-          "w-full flex bg-white dark:bg-slate-900 h-[70px] justify-end sm:justify-start",
+          "w-full flex bg-white dark:bg-slate-900 pt-9 pb-4 px-12 justify-end sm:justify-start",
           className
         )}
       >
-        <div className="flex mr-8 w-full justify-end">
+        <div className="flex w-full justify-end">
           <div className="hidden w-full sm:flex space-x-9 items-center">
             {children}
           </div>

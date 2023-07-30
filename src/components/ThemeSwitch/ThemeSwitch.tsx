@@ -20,13 +20,15 @@ export function ThemeSwitch({ onSwitch, className }: ThemeSwitchPros) {
   }, [onSwitch, theme]);
 
   useEffect(() => {
-    onSwitch?.(theme);
+    if (theme) {
+      onSwitch?.(theme);
+    }
   }, [theme]);
 
   return (
     <div
       className={cx(
-        "flex w-12 p-1 bg-slate-800 dark:bg-white rounded-2xl",
+        "flex w-12 p-1 h-fit bg-slate-800 dark:bg-white rounded-2xl",
         className
       )}
       role="button"
