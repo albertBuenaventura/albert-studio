@@ -41,12 +41,12 @@ export function Navbar({ children, className = "" }: NavbarProps) {
     <div className="sticky z-[9999] top-0" ref={ref}>
       <div
         className={cx(
-          "w-full flex bg-white dark:bg-slate-900 h-[70px] justify-end",
+          "w-full flex bg-white dark:bg-slate-900 h-[70px] justify-end sm:justify-start",
           className
         )}
       >
-        <div className="flex mr-8">
-          <div className="hidden sm:flex space-x-9 items-center">
+        <div className="flex mr-8 w-full justify-end">
+          <div className="hidden w-full sm:flex space-x-9 items-center">
             {children}
           </div>
           <FontAwesomeIcon
