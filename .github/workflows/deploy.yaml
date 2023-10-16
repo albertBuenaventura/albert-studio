@@ -1,18 +1,14 @@
-name: Build and Publish storybook to GitHub Pages
+name: Build Storybook
 
-on:
-  push:
-    branches:
-      - "main"
+on: [push]
+
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.build-publish.outputs.page_url }}
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
-      - id: build-publish
-        uses: bitovi/github-actions-storybook-to-github-pages@v1.0.0
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
         with:
-          path: storybook-static
-          build_command: npm run build-storybook
+          node-version: "14"
+      - run: yarn build-storybook
