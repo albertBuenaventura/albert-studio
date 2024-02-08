@@ -6,7 +6,6 @@ import useTheme from "../hooks/use-theme";
 import { Theme } from "../types/theme";
 import dynamic from "next/dynamic";
 import { ThemeSwitch } from "../components/ThemeSwitch";
-import { Button, ButtonVariant } from "@/components/Button";
 
 export type LayoutProps = {
   children: React.ReactNode;
@@ -15,22 +14,21 @@ export type LayoutProps = {
 function LayoutComponent({ children }: LayoutProps) {
   const { theme } = useTheme();
 
-  console.log(theme);
   return (
     <div
-      className={cx({
-        dark: theme === Theme.Dark,
+      className={cx("bg-primary-light h-screen", {
+        "dark bg-slate-900": theme === Theme.Dark,
       })}
     >
       <Navbar>
-        <div className="flex flex-col sm:flex-row sm:w-full justify-between w-fit space-y-4 sm:space-y-0">
-          <div className="flex flex-col sm:flex-row sm:space-x-9 space-y-4 sm:space-y-0 items-start">
-            <NavItem url="#" text="About me" />
-            <NavItem url="#" text="Projects" />
-            <NavItem url="#" text="Contact" />
+        <div className="flex w-full sm:flex-row sm:w-full justify-center xs:justify-between w-fit mt-2">
+          <div className="hidden ml-6 font-bold text-xl xs:flex space-x-4 text-orange-500">
+            albertstudios
           </div>
-          <div className="flex sm:space-x-4 flex-col sm:flex-row space-y-4 sm:space-y-0">
-            <Button variant={ButtonVariant.Secondary}>Know more</Button>
+          <div className="flex mr-4 sm:flex-row space-x-4 items-start">
+            <NavItem url="#" text="works" />
+            <NavItem url="#" text="services" />
+            <NavItem url="#" text="contact" />
             <ThemeSwitch className="self-start sm:self-center" />
           </div>
         </div>

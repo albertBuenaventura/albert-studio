@@ -3,9 +3,12 @@ module.exports = {
   plugins: [require("@tailwindcss/line-clamp")],
   darkMode: "class",
   theme: {
+    screens: {
+      xs: "500px",
+    },
     extend: {
       colors: {
-        maroon: "#45192F",
+        "primary-light": "#EEE7DE",
       },
     },
   },
