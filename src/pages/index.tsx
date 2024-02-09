@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Layout } from "@/containers/Layout";
+import { Banner } from "@/containers/Banner";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div></div>
+        <Banner />
       </Layout>
     </>
   );

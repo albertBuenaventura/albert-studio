@@ -16,14 +16,15 @@ function LayoutComponent({ children }: LayoutProps) {
 
   return (
     <div
-      className={cx("bg-primary-light h-screen", {
+      className={cx("bg-primary-light h-full w-full", {
         "dark bg-slate-900": theme === Theme.Dark,
       })}
     >
       <Navbar>
         <div className="flex w-full sm:flex-row sm:w-full justify-center xs:justify-between w-fit mt-2">
-          <div className="hidden ml-6 font-bold text-xl xs:flex space-x-4 text-orange-500">
-            albertstudios
+          <div className="hidden flex ml-6 text-2xl xs:flex text-orange-500">
+            <span className="font-bold">albert</span>
+            <span className="">studios.</span>
           </div>
           <div className="flex mr-4 sm:flex-row space-x-4 items-start">
             <NavItem url="#" text="works" />
