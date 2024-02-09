@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Typewriter from "typewriter-effect";
 import albertImage6 from "../../../public/images/AB6.svg";
 
 export function Banner() {
@@ -13,9 +14,27 @@ export function Banner() {
           </span>
         </div>
         <div className="flex space-x-2.5 whitespace-nowrap">
-          <span className="text-black dark:text-white">I'm</span>
+          <span className="text-black dark:text-white">I'm a</span>
           <span className="text-orange-600 dark:text-orange-400">
-            Software Engineer
+            <Typewriter
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Software engineer")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Web developer")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Fullstack developer")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Loving dad")
+                  .pauseFor(1000)
+                  .deleteAll()
+                  .typeString("Software engineer")
+                  .start();
+              }}
+            />
           </span>
         </div>
       </div>
