@@ -1,3 +1,4 @@
+import { Button, ButtonVariant } from "@/components/Button";
 import Image from "next/image";
 import React from "react";
 import Typewriter from "typewriter-effect";
@@ -6,7 +7,7 @@ import albertImage6 from "../../../public/images/AB6.svg";
 export function Banner() {
   return (
     <div className="flex space-y-4 md:space-x-4 flex-col-reverse xmd:flex-row p-14">
-      <div className="flex flex-col items-center xmd:items-start w-full mt-10 text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
+      <div className="flex flex-col items-center xmd:items-start w-full mt-16 text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
         <div className="flex text-2xl sm:text-3xl space-x-2.5">
           <span className="text-black dark:text-white">Hey, I'm</span>
           <span className="text-orange-600 dark:text-orange-400 font-medium">
@@ -37,6 +38,11 @@ export function Banner() {
             />
           </span>
         </div>
+        <div className="w-5/6 mt-6 text-lg dark:text-white">
+          I am a full-stack developer based in the Philippines. I’ll help you
+          crafting digital dreams into reality, one line at a time.
+        </div>
+        <Button className="mt-2 text-base">Get in touch</Button>
       </div>
       <Image
         className="w-auto h-[250px] xmd:h-[350px] lg:h-[380px] xl:h-[500px]"
