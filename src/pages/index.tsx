@@ -15,7 +15,7 @@ export default function Home() {
         <meta property="og:url" content="https://albert-studio.dev/" />
         <meta property="og:site_name" content="Albert Studio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       <Layout>
         <Banner />
