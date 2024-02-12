@@ -6,7 +6,7 @@ import albertImage6 from "../../../public/images/AB6.svg";
 
 export function Banner() {
   return (
-    <div className="flex min-h-[100vh] items-center justify-center space-y-4 md:space-x-4 flex-col-reverse xmd:flex-row xmd:pt-[90px] p-4 md:p-14">
+    <div className="flex min-h-[100vh] items-center justify-center space-y-4 md:space-x-4 flex-col-reverse xmd:flex-row">
       <div className="flex flex-col items-center xmd:items-start w-full mt-10 xmd:mt-16 text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
         <div className="flex text-xl xm:3xl space-x-2.5">
           <span className="text-black dark:text-white">Hey, I'm</span>
@@ -20,19 +20,19 @@ export function Banner() {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Software engineer")
-                  .pauseFor(1000)
-                  .deleteAll()
                   .typeString("Web developer")
-                  .pauseFor(1000)
+                  .pauseFor(500)
+                  .deleteAll()
+                  .typeString("Software engineer")
+                  .pauseFor(500)
                   .deleteAll()
                   .typeString("Fullstack developer")
-                  .pauseFor(1000)
+                  .pauseFor(500)
                   .deleteAll()
-                  .typeString("Loving dad")
-                  .pauseFor(1000)
+                  .typeString("Cool dad")
+                  .pauseFor(500)
                   .deleteAll()
-                  .typeString("Software engineer")
+                  .typeString("Web developer")
                   .start();
               }}
             />
@@ -40,7 +40,7 @@ export function Banner() {
         </div>
         <div className="text-center xmd:text-left w-11/12 md:w-5/6 mt-6 text-lg dark:text-white">
           I am a full-stack developer based in the Philippines. I’ll help you
-          crafting digital dreams into reality, one line at a time.
+          crafting digital dreams into reality, line by line.
         </div>
         <Button className="mt-4 text-base">Get in touch</Button>
       </div>
