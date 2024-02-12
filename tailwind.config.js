@@ -15,5 +15,9 @@ module.exports = {
         "primary-light": "#EEE7DE",
       },
     },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"],
+      circular: ['"Poppins"'],
+    },
   },
 };
