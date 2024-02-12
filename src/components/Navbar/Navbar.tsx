@@ -43,11 +43,10 @@ export function Navbar({
   );
 
   return (
-    <div className="sticky z-[9999] top-0" ref={ref}>
+    <div className={cx("sticky z-[9999] top-0", className)} ref={ref}>
       <div
         className={cx(
-          "w-full flex dark:bg-slate-900 py-6 px-4 justify-end sm:justify-start",
-          className
+          "w-full flex dark:bg-slate-900 py-6 px-4 justify-end sm:justify-start"
         )}
       >
         <div className="flex w-full justify-end">

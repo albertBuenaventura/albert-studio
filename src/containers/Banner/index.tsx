@@ -6,16 +6,16 @@ import albertImage6 from "../../../public/images/AB6.svg";
 
 export function Banner() {
   return (
-    <div className="flex space-y-4 md:space-x-4 flex-col-reverse xmd:flex-row p-4 md:p-14">
-      <div className="flex flex-col items-center xmd:items-start w-full mt-10 xmd:mt-16 text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-        <div className="flex text-3xl space-x-2.5">
+    <div className="flex h-screen space-y-4 md:space-x-4 flex-col-reverse xmd:flex-row p-4 md:p-14">
+      <div className="flex flex-col items-center xmd:items-start w-full mt-10 xmd:mt-16 text-2xl md:text-5xl lg:text-6xl xl:text-7xl">
+        <div className="flex text-xl xm:3xl space-x-2.5">
           <span className="text-black dark:text-white">Hey, I'm</span>
           <span className="text-orange-600 dark:text-orange-400 font-medium">
             Albert 👋🏻
           </span>
         </div>
-        <div className="flex space-x-2.5 whitespace-nowrap">
-          <span className="text-black dark:text-white">I'm a</span>
+        <div className="flex space-x-2.5 xmd:whitespace-nowrap">
+          <span className="text-black dark:text-white w-200px">I'm a</span>
           <span className="text-orange-600 dark:text-orange-400">
             <Typewriter
               onInit={(typewriter) => {
@@ -38,7 +38,7 @@ export function Banner() {
             />
           </span>
         </div>
-        <div className="w-11/12 md:w-5/6 mt-6 text-lg dark:text-white">
+        <div className="text-center xmd:text-left w-11/12 md:w-5/6 mt-6 text-lg dark:text-white">
           I am a full-stack developer based in the Philippines. I’ll help you
           crafting digital dreams into reality, one line at a time.
         </div>
