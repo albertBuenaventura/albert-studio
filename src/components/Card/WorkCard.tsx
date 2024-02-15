@@ -31,7 +31,7 @@ export function WorkCard({
   return (
     <Card className={cx("w-full rounded-[40px]", className)}>
       <Container className="flex flex-col h-full justify-between" color={color}>
-        <div className="text-white text-2xl flex flex-col space-y-2 self-end mr-10 my-8">
+        <div className="text-white text-2xl flex flex-col space-y-2 self-end mx-10 my-8">
           <span>{name}</span>
           <span>{cta}</span>
         </div>

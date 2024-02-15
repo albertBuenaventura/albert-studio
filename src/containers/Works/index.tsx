@@ -29,7 +29,7 @@ export function Works() {
           name="I'd love to hear about your project."
           color="#183A1D"
           imgUrl="https://albertstudios.s3.ap-southeast-2.amazonaws.com/images/albert-popcorn.png"
-          imgClassName="w-full h-full align-end"
+          imgClassName="w-[300px] h-[300px] self-end"
           cta={<Link href="/contact">{cta("Inquire")}</Link>}
         />
       </div>
