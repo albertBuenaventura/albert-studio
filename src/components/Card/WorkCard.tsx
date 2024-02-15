@@ -31,7 +31,7 @@ export function WorkCard({
   return (
     <Card
       className={cx(
-        "w-full !rounded-[40px] transition hover:-translate-y-4",
+        "w-full !rounded-[40px] transition hover:-translate-y-2",
         className
       )}
     >
@@ -41,10 +41,7 @@ export function WorkCard({
           <span>{cta}</span>
         </div>
         <img
-          className={cx(
-            "ml-10 h-auto w-full drop-shadow-md rounded",
-            imgClassName
-          )}
+          className={cx("ml-10 h-auto drop-shadow-md rounded", imgClassName)}
           src={imgUrl}
         />
       </Container>

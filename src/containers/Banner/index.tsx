@@ -6,7 +6,7 @@ import albertImage6 from "../../../public/images/AB6.svg";
 
 export function Banner() {
   return (
-    <div className="flex min-h-[100vh] items-center justify-center space-y-4 md:space-x-4 flex-col-reverse xmd:flex-row">
+    <div className="flex min-h-[calc(100vh-88px)] items-center justify-center space-y-4 md:space-x-4 flex-col-reverse xmd:flex-row">
       <div className="flex flex-col items-center xmd:items-start w-full mt-10 xmd:mt-16 text-2xl md:text-4xl lg:text-5xl xl:text-6xl">
         <div className="flex text-xl xm:3xl space-x-2.5">
           <span className="text-black dark:text-white">Hey, I'm</span>

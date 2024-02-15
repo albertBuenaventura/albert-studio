@@ -7,7 +7,7 @@ export function Works() {
   const cta = (text: string) => <Button className="text-base">{text}</Button>;
 
   return (
-    <div className="flex flex-col w-full h-full space-y-8">
+    <div id="projects" className="flex flex-col w-full h-full space-y-8">
       <div className="text-5xl text-black dark:text-white dark:text-orange-400">
         <span className="text-orange-600 dark:text-orange-400">&lt;</span>
         <span>Projects</span>
@@ -19,6 +19,7 @@ export function Works() {
           name="Homeclean Franchise"
           color="#0084C7"
           imgUrl="https://albertstudios.s3.ap-southeast-2.amazonaws.com/images/homeclean-franchise.png"
+          imgClassName="w-full"
           cta={
             <Link href="https://homecleanfranchise.co.uk" target="_blank">
               {cta("Visit website")}

@@ -20,21 +20,21 @@ function LayoutComponent({ children }: LayoutProps) {
         "dark bg-slate-900": theme === Theme.Dark,
       })}
     >
-      <Navbar className="bg-primary-light !fixed w-full">
+      <Navbar className="bg-primary-light w-full">
         <div className="flex w-full sm:flex-row sm:w-full justify-center xs:justify-between w-fit mt-2">
           <div className="hidden flex ml-6 text-2xl xs:flex text-orange-500">
             <span className="font-bold">albert</span>
             <span className="">studios.</span>
           </div>
           <div className="flex xmd:mr-4 sm:flex-row space-x-4 items-start">
-            <NavItem url="#" text="works" />
+            <NavItem url="/#projects" text="works" />
             <NavItem url="#" text="services" />
             <NavItem url="#" text="contact" />
             <ThemeSwitch className="self-center" />
           </div>
         </div>
       </Navbar>
-      <div className="p-6 md:p-14">{children}</div>
+      <div className="px-6 md:px-14">{children}</div>
     </div>
   );
 }
