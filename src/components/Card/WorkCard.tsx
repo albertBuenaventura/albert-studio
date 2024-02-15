@@ -31,7 +31,7 @@ export function WorkCard({
   return (
     <Card
       className={cx(
-        "w-full rounded-[40px] transition hover:-translate-y-4",
+        "w-full !rounded-[40px] transition hover:-translate-y-4",
         className
       )}
     >
