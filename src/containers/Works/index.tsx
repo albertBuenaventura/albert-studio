@@ -14,7 +14,7 @@ export function Works() {
       </div>
       <div className="grid xmd:grid-cols-2 gap-4">
         <WorkCard
-          className="max-h-[500px] w-full"
+          className="transition hover:-translate-y-4 max-h-[500px] w-full"
           name="Homeclean Franchise"
           color="#0084C7"
           imgUrl="https://albertstudios.s3.ap-southeast-2.amazonaws.com/images/homeclean-franchise.png"
@@ -29,7 +29,7 @@ export function Works() {
           name="I'd love to hear about your project."
           color="#183A1D"
           imgUrl="https://albertstudios.s3.ap-southeast-2.amazonaws.com/images/albert-popcorn.png"
-          imgClassName="w-[300px] h-[300px] self-end"
+          imgClassName="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] self-end"
           cta={<Link href="/contact">{cta("Inquire")}</Link>}
         />
       </div>

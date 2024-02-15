@@ -34,7 +34,7 @@ function LayoutComponent({ children }: LayoutProps) {
           </div>
         </div>
       </Navbar>
-      <div className="p-4 md:p-14">{children}</div>
+      <div className="p-6 md:p-14">{children}</div>
     </div>
   );
 }
