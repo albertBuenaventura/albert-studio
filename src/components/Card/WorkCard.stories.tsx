@@ -3,18 +3,17 @@ import { Story, Meta } from "@storybook/react";
 
 import { WorkCard, WorkCardProps } from ".";
 import StorybookThemeContainer from "../StorybookThemeContainer";
+import { Button } from "../Button";
 
 const Template: Story<WorkCardProps> = () => {
   return (
     <StorybookThemeContainer>
       <WorkCard
+        name="Homeclean Franchise"
         color="#0084C7"
         imgUrl="https://albertstudios.s3.ap-southeast-2.amazonaws.com/images/homeclean-franchise.png"
-      >
-        <div className="flex h-96 justify-center items-center">
-          SAMPLE CONTENT
-        </div>
-      </WorkCard>
+        cta={<Button>Visit Website</Button>}
+      ></WorkCard>
     </StorybookThemeContainer>
   );
 };
