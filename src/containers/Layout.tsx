@@ -20,7 +20,7 @@ function LayoutComponent({ children }: LayoutProps) {
         "dark bg-slate-900": theme === Theme.Dark,
       })}
     >
-      <Navbar className="!fixed w-full">
+      <Navbar className="bg-primary-light !fixed w-full">
         <div className="flex w-full sm:flex-row sm:w-full justify-center xs:justify-between w-fit mt-2">
           <div className="hidden flex ml-6 text-2xl xs:flex text-orange-500">
             <span className="font-bold">albert</span>
