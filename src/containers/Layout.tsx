@@ -26,9 +26,10 @@ function LayoutComponent({ children }: LayoutProps) {
             <span className="font-bold">albert</span>
             <span className="">studios.</span>
           </div>
-          <div className="flex xmd:mr-4 sm:flex-row space-x-4 items-start">
+          <div className="flex xmd:mr-4 sm:flex-row space-x-2 2xs:space-x-4 items-start">
+            <NavItem url="/" text="home" />
             <NavItem url="/#projects" text="works" />
-            <NavItem url="#" text="services" />
+            <NavItem url="#" text="about" />
             <NavItem url="#" text="contact" />
             <ThemeSwitch className="self-center" />
           </div>
