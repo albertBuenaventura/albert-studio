@@ -1,4 +1,5 @@
 import React from "react";
+import cx from "classnames";
 
 export enum ButtonVariant {
   Primary,
@@ -11,7 +12,8 @@ export type ButtonProps = {
   children?: React.ReactNode;
   disabled?: boolean;
   className?: string;
-} & React.HTMLAttributes<HTMLButtonElement>;
+  type?: "button" | "submit" | "reset";
+} & React.HTMLProps<HTMLButtonElement>;
 
 const baseClass = "rounded-full h-11 py-2 px-4";
 
@@ -33,7 +35,9 @@ export function Button({
   return (
     <button
       {...otherProps}
-      className={`${variantClass[variant]} ${baseClass} ${className}`}
+      className={cx(`${variantClass[variant]} ${baseClass} ${className}`, {
+        "opacity-50 cursor-not-allowed": disabled,
+      })}
       onClick={onClick}
       disabled={disabled}
     >

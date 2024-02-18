@@ -1,8 +1,7 @@
 import Head from "next/head";
 import { Layout } from "@/containers/Layout";
-import { Banner } from "@/containers/Banner";
-import { Works } from "@/containers/Works";
 import Header from "@/components/_header";
+import { ContactFormCard } from "@/containers/ContactForm/ContactFormCard";
 
 export default function Home() {
   return (
@@ -11,8 +10,7 @@ export default function Home() {
         <Header />
       </Head>
       <Layout>
-        <Banner />
-        <Works />
+        <ContactFormCard />
       </Layout>
     </>
   );
