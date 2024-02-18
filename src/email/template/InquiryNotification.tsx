@@ -30,8 +30,6 @@ const paragraph = {
 export type InquiryNotificationProps = {
   name: string;
   email: string;
-  areaInterested: string;
-  tel: string;
   message: string;
 };
 
