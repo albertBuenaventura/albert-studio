@@ -1,5 +1,6 @@
 import { Button } from "@/components/Button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Typewriter from "typewriter-effect";
 import albertImage6 from "../../../public/images/AB6.svg";
@@ -42,7 +43,9 @@ export function Banner() {
           I am a full-stack developer based in the Philippines. I’ll help you
           crafting digital dreams into reality, line by line.
         </div>
-        <Button className="mt-4 text-base">Get in touch</Button>
+        <Link href={"/contact"}>
+          <Button className="mt-4 text-base">Get in touch</Button>
+        </Link>
       </div>
       <Image
         className="w-auto h-[250px] xmd:h-[350px] lg:h-[330px] xl:h-[450px] 2xl:h-[500px]"

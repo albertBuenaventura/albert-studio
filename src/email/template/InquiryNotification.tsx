@@ -42,7 +42,7 @@ export default function InquiryNotification({
     <Html>
       <Section style={main}>
         <Container style={container}>
-          <Text style={heading}>New Franchise Inquiry</Text>
+          <Text style={heading}>New AlbertStudios.dev Inquiry</Text>
           <Text style={paragraph}>Name: {name}</Text>
           <Text style={paragraph}>Email: {email}</Text>
           <Text style={paragraph}>Message: {message}</Text>

@@ -34,7 +34,7 @@ export default async function handler(
       if (captchaValidation.success) {
         await sendEmail({
           to: JSON.parse(process.env.NEXT_PUBLIC_EMAIL_RECIPIENTS as string),
-          subject: "Franchise Marketing LP",
+          subject: "AlbertStudios.dev Inquiry",
           html: render(
             InquiryNotification({
               name,
@@ -51,6 +51,7 @@ export default async function handler(
         ...captchaValidation,
       });
     } catch (error) {
+      console.error(error);
       return res.status(422).json({ message: "Something went wrong" });
     }
   }

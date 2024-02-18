@@ -1,16 +1,13 @@
 import React, { ChangeEvent, useCallback, useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 import { useMedia } from "react-use-media";
 import ReCAPTCHA from "react-google-recaptcha";
 
-import { Card } from "@/components/Card";
 import { Textarea } from "@/components/Textarea";
 import { TextField } from "@/components/TextField";
 import { Button } from "@/components/Button";
-import Link from "next/link";
 import Title from "@/components/Page/Title";
 
 export type ContactFormCardProps = {
@@ -63,30 +60,26 @@ export function ContactFormCard({
 
   const submitContactForm = async (captcha: string) => {
     try {
-      const response = await fetch(
-        `${process.env.NEXT_PUBLIC_BASE_URL}/api/contact`,
-        {
-          method: "POST",
-          body: JSON.stringify({
-            name,
-            email,
-            message,
-            captcha,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
+      const response = await fetch(`${process.env.publicBaseUrl}/api/contact`, {
+        method: "POST",
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          captcha,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       if (response.ok) {
         setEmail("");
         setName("");
         setMessage("");
 
         setNotice(
-          <span className="text-green-500">
-            Thank you for submitting inquiry. Someone from our team will reach
-            out to you soon.
+          <span className="text-orange-400 dark:text-orange-400">
+            Submitted.
           </span>
         );
 
@@ -113,7 +106,7 @@ export function ContactFormCard({
         Thank you for taking the time to reach out, I got you. Leave a message
         and I'll get back to you soonest.
       </div>
-      {notice && <div>{notice}</div>}
+      {notice && <div className="mb-5">{notice}</div>}
       <form onSubmit={handleSubmit} className="flex flex-col space-y-10 h-full">
         <div className="flex md:space-x-5 w-full h-full">
           <div className="flex-col space-y-6 text-black dark:text-white hidden md:flex">
@@ -157,7 +150,7 @@ export function ContactFormCard({
         />
         <Button
           type="submit"
-          className={`flex justify-center ${buttonClassName}`}
+          className={`flex justify-center items-center ${buttonClassName}`}
           disabled={submitting || !captcha}
         >
           {submitting ? (
