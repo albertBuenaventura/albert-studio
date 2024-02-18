@@ -6,11 +6,8 @@ export type ContactFormProps = ContactFormCardProps;
 export function ContactForm({
   onFormSubmit,
   subtitle,
-  hideAreaInterestedInField,
-  hideMessageField,
   ctaText,
   title,
-  hideConsent,
   buttonClassName,
 }: ContactFormProps) {
   return (
@@ -23,9 +20,6 @@ export function ContactForm({
         subtitle={subtitle}
         title={title}
         ctaText={ctaText}
-        hideMessageField={hideMessageField}
-        hideAreaInterestedInField={hideAreaInterestedInField}
-        hideConsent={hideConsent}
         buttonClassName={buttonClassName}
       />
     </div>

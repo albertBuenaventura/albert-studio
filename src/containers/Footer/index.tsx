@@ -4,6 +4,7 @@ import { NavItems } from "../Navbar/NavItems";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export function Footer() {
   return (
@@ -21,14 +22,21 @@ export function Footer() {
             href={"https://github.com/albertBuenaventura"}
             target="_blank"
           >
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} className="w-full h-full" />
           </Link>
           <Link
             className="w-7 h-7 hover:text-orange-600 dark:hover:text-orange-400"
             href={"https://www.linkedin.com/in/albert-buenaventura-0b889086/"}
             target="_blank"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} className="w-full h-full" />
+          </Link>
+          <Link
+            className="w-7 h-7 hover:text-orange-600 dark:hover:text-orange-400"
+            href={"mailto:albert@albertstudios.dev"}
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faEnvelope} className="w-full h-full" />
           </Link>
         </div>
       </div>
