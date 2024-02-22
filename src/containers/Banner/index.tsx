@@ -21,6 +21,7 @@ export function Banner() {
             <Typewriter
               onInit={(typewriter) => {
                 typewriter
+                  .changeDelay(90)
                   .typeString("Web developer")
                   .pauseFor(500)
                   .deleteAll()
