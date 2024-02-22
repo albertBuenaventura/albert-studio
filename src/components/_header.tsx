@@ -1,7 +1,9 @@
+import Head from "next/head";
+
 export default function Header() {
   return (
-    <>
-      <title>Albert Studio</title>
+    <Head>
+      <title>AlbertStudios</title>
       <meta
         name="description"
         content="Albert Buenaventura Software Engineer, developer from the Philippines"
@@ -23,6 +25,6 @@ export default function Header() {
 
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <link rel="icon" href="/favicon.png" />
-    </>
+    </Head>
   );
 }

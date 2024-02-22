@@ -8,7 +8,10 @@ export function Works() {
   const cta = (text: string) => <Button className="text-base">{text}</Button>;
 
   return (
-    <div id="projects" className="flex flex-col w-full h-full space-y-8">
+    <div
+      id="projects"
+      className="flex flex-col scroll-mt-[88px] w-full h-full space-y-8"
+    >
       <Title text="Projects" />
       <div className="grid xmd:grid-cols-2 gap-4">
         <WorkCard

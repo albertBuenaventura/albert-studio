@@ -8,7 +8,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export function Footer() {
   return (
-    <div className="mt-6 py-10 space-y-4">
+    <div id="footer" className="mt-6 py-10 space-y-4">
       <div className="flex flex-wrap gap-2 justify-between">
         <Logo className="flex" />
         <NavItems />

@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Layout } from "@/containers/Layout";
 import Header from "@/components/_header";
 import { ContactFormCard } from "@/containers/ContactForm/ContactFormCard";
@@ -6,9 +5,7 @@ import { ContactFormCard } from "@/containers/ContactForm/ContactFormCard";
 export default function Home() {
   return (
     <>
-      <Head>
-        <Header />
-      </Head>
+      <Header />
       <Layout>
         <ContactFormCard />
       </Layout>
