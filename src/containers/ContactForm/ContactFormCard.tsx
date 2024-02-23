@@ -100,7 +100,7 @@ export function ContactFormCard({
   };
 
   return (
-    <div className="mt-10 min-h-[calc(100vh-88px)] max-w-[700px] m-auto">
+    <div className="mt-10 max-w-[700px] m-auto">
       <Title text={title} className="mb-5 text-center" />
       <div className="mb-5 text-black dark:text-white text-center">
         Thank you for taking the time to reach out, I got you. Leave a message

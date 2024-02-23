@@ -18,7 +18,7 @@ function LayoutComponent({ children }: LayoutProps) {
 
   return (
     <div
-      className={cx("bg-primary-light h-full w-full", {
+      className={cx("bg-primary-light h-full w-full min-h-[100vh]", {
         "dark bg-slate-900": theme === Theme.Dark,
       })}
     >

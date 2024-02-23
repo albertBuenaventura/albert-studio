@@ -17,7 +17,7 @@ export function NavItems({ className }: NavItemsProps) {
     >
       <NavItem url="/" text="home" />
       <NavItem url="/#projects" text="works" />
-      <NavItem url="#" text="about" />
+      <NavItem url="/about" text="about" />
       <NavItem url="/contact" text="contact" />
       <ThemeSwitch className="self-center" />
     </div>
