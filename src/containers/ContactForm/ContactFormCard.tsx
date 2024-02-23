@@ -9,6 +9,7 @@ import { Textarea } from "@/components/Textarea";
 import { TextField } from "@/components/TextField";
 import { Button } from "@/components/Button";
 import Title from "@/components/Page/Title";
+import Link from "next/link";
 
 export type ContactFormCardProps = {
   onFormSubmit?: () => void;
@@ -104,7 +105,14 @@ export function ContactFormCard({
       <Title text={title} className="mb-5 text-center" />
       <div className="mb-5 text-black dark:text-white text-center">
         Thank you for taking the time to reach out, I got you. Leave a message
-        and I'll get back to you soonest.
+        and I'll get back to you soonest or you may email me at
+        <Link
+          className="ml-1 text-orange-600 dark:text-oranger-400"
+          href={"mailto:albert@albertstudios.dev"}
+        >
+          albert@albertstudios.dev
+        </Link>
+        .
       </div>
       {notice && <div className="mb-5">{notice}</div>}
       <form onSubmit={handleSubmit} className="flex flex-col space-y-10 h-full">
