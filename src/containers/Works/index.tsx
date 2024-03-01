@@ -13,15 +13,27 @@ export function Works() {
       className="flex flex-col scroll-mt-[88px] w-full h-full space-y-8"
     >
       <Title text="Projects" />
-      <div className="grid xmd:grid-cols-2 gap-4">
+      <div className="grid xmd:grid-cols-3 gap-4">
         <WorkCard
           className="transition hover:-translate-y-4 max-h-[450px] w-full"
           name="Homeclean Franchise"
           color="#0084C7"
           imgUrl="https://albertstudios.s3.ap-southeast-2.amazonaws.com/images/homeclean-franchise.png"
-          imgClassName="w-full"
+          imgClassName="w-full h-full object-cover object-left-top"
           cta={
             <Link href="https://homecleanfranchise.co.uk" target="_blank">
+              {cta("Visit website")}
+            </Link>
+          }
+        />
+        <WorkCard
+          className="transition hover:-translate-y-4 max-h-[450px] w-full"
+          name="WIP: Component library"
+          color="#FE4685"
+          imgUrl="https://albertstudios.s3.ap-southeast-2.amazonaws.com/images/component-library.png"
+          imgClassName="w-full h-full object-cover object-left-top"
+          cta={
+            <Link href="https://components.albertstudios.dev/" target="_blank">
               {cta("Visit website")}
             </Link>
           }
