@@ -13,7 +13,7 @@ export function Works() {
       className="flex flex-col scroll-mt-[88px] w-full h-full space-y-8"
     >
       <Title text="Projects" />
-      <div className="grid xmd:grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 gap-4">
         <WorkCard
           className="transition hover:-translate-y-4 max-h-[450px] w-full"
           name="Homeclean Franchise"
