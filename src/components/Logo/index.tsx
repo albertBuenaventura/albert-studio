@@ -11,7 +11,7 @@ export function Logo({ className }: LogoProps) {
     <Link href={"/"}>
       <div className={cx("flex text-2xl xs:flex text-orange-500", className)}>
         <span className="font-bold">albert</span>
-        <span className="">studios.</span>
+        <span className="">solutions.</span>
       </div>
     </Link>
   );

@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "prepare": "husky install",
     "build:server": "next build && next start"
   },
@@ -23,6 +23,7 @@
     "@react-email/html": "^0.0.7",
     "@react-email/section": "^0.0.11",
     "@react-email/text": "^0.0.7",
+    "@storybook/test": "^7.6.17",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@types/node": "18.13.0",
     "@types/react": "18.0.28",
@@ -43,14 +44,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-interactions": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/builder-webpack5": "^6.5.16",
-    "@storybook/manager-webpack5": "^6.5.16",
-    "@storybook/react": "^6.5.16",
-    "@storybook/testing-library": "^0.0.13",
+    "@storybook/addon-actions": "^7.6.17",
+    "@storybook/addon-essentials": "^7.6.17",
+    "@storybook/addon-interactions": "^7.6.17",
+    "@storybook/addon-links": "^7.6.17",
+    "@storybook/nextjs": "^7.6.17",
+    "@storybook/react": "^7.6.17",
     "@types/nodemailer": "^6.4.7",
     "@types/react-google-recaptcha": "^2.1.9",
     "@types/styled-components": "^5.1.26",
@@ -65,6 +64,11 @@
     "postcss-loader": "^7.0.2",
     "prettier": "^2.8.4",
     "react-use-media": "^0.3.0",
+    "storybook": "^7.6.17",
     "tailwindcss": "^3.2.7"
+  },
+  "resolutions": {
+    "string-width": "4.2.3",
+    "jackspeak": "2.1.1"
   }
 }

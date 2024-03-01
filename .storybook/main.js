@@ -7,10 +7,12 @@ module.exports = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
   ],
-  framework: "@storybook/react",
-  core: {
-    builder: "@storybook/builder-webpack5",
+
+  framework: {
+    name: "@storybook/nextjs",
+    options: {}
   },
+
   webpackFinal: async (config) => {
     config.module.rules.push({
       test: /\.css$/i,
@@ -25,4 +27,8 @@ module.exports = {
     // Return the altered config
     return config;
   },
+
+  docs: {
+    autodocs: true
+  }
 };
