@@ -29,12 +29,7 @@ export function WorkCard({
   imgClassName,
 }: WorkCardProps) {
   return (
-    <Card
-      className={cx(
-        "bg-orange-100 w-full !rounded-[40px] transition hover:-translate-y-2",
-        className
-      )}
-    >
+    <Card className={cx("bg-orange-100 w-full !rounded-[40px]", className)}>
       <Container className="flex flex-col h-full justify-between">
         <div className="text-black dark:text-white text-2xl flex flex-col space-y-2 self-end mx-10 my-8">
           <span>{name}</span>

@@ -1,7 +1,6 @@
 import { Layout } from "@/containers/Layout";
 import Header from "@/components/_header";
 import Image from "next/image";
-import albertImage11 from "../../public/images/AB11.svg";
 
 export default function About() {
   const yearStarted = 2015;
@@ -21,9 +20,13 @@ export default function About() {
           <div className="flex flex-col lg:flex-row items-center justify-center w-full pb-4 gap-12">
             <Image
               className="w-auto h-[350px]"
-              src={albertImage11}
+              src={
+                "https://albertstudios.s3.ap-southeast-2.amazonaws.com/images/AB11.svg"
+              }
               alt="albert buenaventura image"
               priority
+              width={7718}
+              height={6561}
             />
             <div className="lg:max-w-[700px] flex flex-col items-center xmd:items-start w-full text-black dark:text-white">
               <div className="text-orange-600 dark:text-orange-400 text-4xl mb-10">

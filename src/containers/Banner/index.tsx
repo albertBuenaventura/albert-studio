@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Typewriter from "typewriter-effect";
-import albertImage6 from "../../../public/images/AB6.svg";
 
 export function Banner() {
   return (
@@ -48,11 +47,11 @@ export function Banner() {
           <Button className="mt-4 text-base">Get in touch</Button>
         </Link>
       </div>
-      <Image
+      <img
         className="w-auto h-[250px] xmd:h-[350px] lg:h-[330px] xl:h-[450px] 2xl:h-[500px]"
-        src={albertImage6}
+        src="https://albertstudios.s3.ap-southeast-2.amazonaws.com/images/AB6.svg"
         alt="albert buenaventura image"
-        priority
+        width={6813}
       />
     </div>
   );
