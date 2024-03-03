@@ -10,7 +10,7 @@ export default function Title({ text, className }: TitleProps) {
   return (
     <div
       className={cx(
-        "text-4xl lg:text-5xl whitespace-nowrap text-black dark:text-white dark:text-orange-400",
+        "text-3xl lg:text-4xl whitespace-nowrap text-black dark:text-white dark:text-orange-400",
         className
       )}
     >
