@@ -23,7 +23,7 @@ function LayoutComponent({ children }: LayoutProps) {
         "dark bg-slate-900": theme === Theme.Dark,
       })}
     >
-      <GoogleTagManager gtmId="G-KCT7CY7GYZ" />
+      <GoogleTagManager gtmId="GTM-5W2JS9G3" />
 
       <Navbar className="bg-primary-light w-full">
         <div className="flex w-full sm:flex-row sm:w-full justify-center sm:justify-between w-fit mt-2">
