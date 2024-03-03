@@ -28,7 +28,7 @@ function LayoutComponent({ children }: LayoutProps) {
           <NavItems />
         </div>
       </Navbar>
-      <div className="px-6 md:px-14">
+      <div className="px-6 md:px-14 text-black dark:text-white">
         {children}
         <Footer />
       </div>
