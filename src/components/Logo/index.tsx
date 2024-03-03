@@ -9,7 +9,7 @@ export type LogoProps = {
 export function Logo({ className }: LogoProps) {
   return (
     <Link href={"/"}>
-      <div className={cx("flex text-2xl xs:flex text-orange-500", className)}>
+      <div className={cx("flex text-2xl sm:flex text-orange-500", className)}>
         <span className="font-bold">albert</span>
         <span className="">studios.</span>
       </div>

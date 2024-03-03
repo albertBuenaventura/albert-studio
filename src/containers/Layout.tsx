@@ -23,7 +23,7 @@ function LayoutComponent({ children }: LayoutProps) {
       })}
     >
       <Navbar className="bg-primary-light w-full">
-        <div className="flex w-full sm:flex-row sm:w-full justify-center xs:justify-between w-fit mt-2">
+        <div className="flex w-full sm:flex-row sm:w-full justify-center sm:justify-between w-fit mt-2">
           <Logo className="hidden ml-6" />
           <NavItems />
         </div>

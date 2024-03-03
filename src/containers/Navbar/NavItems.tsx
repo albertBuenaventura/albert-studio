@@ -11,7 +11,7 @@ export function NavItems({ className }: NavItemsProps) {
   return (
     <div
       className={cx(
-        "flex xmd:mr-4 sm:flex-row space-x-2 2xs:space-x-4 items-start",
+        "flex xmd:mr-4 sm:flex-row space-x-2 sm:space-x-4 items-start",
         className
       )}
     >
@@ -19,6 +19,7 @@ export function NavItems({ className }: NavItemsProps) {
       <NavItem url="/#projects" text="works" />
       <NavItem url="/about" text="about" />
       <NavItem url="/contact" text="contact" />
+      <NavItem url="/blog" text="blog" />
       <ThemeSwitch className="self-center" />
     </div>
   );
