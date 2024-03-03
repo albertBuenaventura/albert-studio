@@ -1,5 +1,6 @@
 import React from "react";
 import cx from "classnames";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 import { Navbar } from "../components/Navbar";
 import useTheme from "../hooks/use-theme";
@@ -22,6 +23,8 @@ function LayoutComponent({ children }: LayoutProps) {
         "dark bg-slate-900": theme === Theme.Dark,
       })}
     >
+      <GoogleTagManager gtmId="G-KCT7CY7GYZ" />
+
       <Navbar className="bg-primary-light w-full">
         <div className="flex w-full sm:flex-row sm:w-full justify-center sm:justify-between w-fit mt-2">
           <Logo className="hidden ml-6" />
